@@ -1,0 +1,72 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid shadow-sm p-3 mb-5 bg-body rounded">
+      <a class="navbar-brand" href="#"><img src="assets/images/logo.png" class="img-fluid" alt="..." style="width: 164px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div class="input-group">
+            <span class="input-group-text"><img src="assets/images/location.png" class="img-fluid img1" alt="..."></span>
+            <input type="text" placeholder="Enter your Delivery Location">
+          </div>
+       
+        </ul>
+       
+        <div class="d-flex flex-row-reverse justify-content-center ">
+  <div class="p-2 bd-highlight">
+    <img src="assets/images/icon.png" class="img-fluid img1" alt="..."><span class="title">My Profile</span></div>
+    <div class="vl"></div>
+  <div class="p-2 bd-highlight">
+    <img src="assets/images/profile.png" class="img-fluid img1" alt="...">
+    <a  class="btn btn-dange"> <span class="title" data-bs-toggle="modal" data-bs-target="#exampleModal"> Sign In</span></a>
+  </div>
+  <div class="vl"></div>
+  <div class="p-2 bd-highlight">
+    <img src="assets/images/cart.png" class="img-fluid img1" alt="...">
+    <a routerLink="cart" class="btn btn-dange" type="submit"><span class="title">Cart</span></a>
+  </div>
+  <div class="vl"></div>
+  <div class="p-2 bd-highlight">
+    <img src="assets/images/call.png" class="img-fluid text-center img1" alt="...">
+  07738383000
+    </div>
+</div>
+          
+          
+       
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="assets/images/bg.png" class="img-fluid" alt="...">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+     <h1 class="heading">Welcome</h1>
+
+      <p>Enter your phone number to proceed</p>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Enter Your Mobile Number</label>
+      </div>
+
+     <p class="text-center"> By continuing you agree to our Terms of Use<br>
+& Privacy Policy</p>
+      </div>
+      <div class="text-center py-3">
+        
+        <button type="button" class="btn btn-primary">continue</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: rgb(10 10 9) !important;
+}
+
+.text-uppercase {
+    text-transform: uppercase !important;
+    color: #b58637;
+}
+
+
+.text1{
+    text-decoration: none;
+    color:azure;
+}

@@ -1,0 +1,49 @@
+
+
+<h1 class="text-center"> My Order</h1>
+
+
+
+
+@for(item of cartService.getItems(); track item.id){
+    <div class="container shadow p-3 mb-5 bg-body rounded">
+      <div class="row d-flex justify-content-center">
+ <div class="col-sm-8">
+  
+<div class="card mb-3">
+    <div class="row g-0">
+      <div class="col-md-6">
+        <img [src]="item.imageUrl" class="card-img-top" alt="..." style="height: 100%;">
+      </div>
+      <div class="col-md-4">
+        <div class="card-body">
+          <h3 class="card-title">{{ item.name}}</h3>
+          <h6 class="card-title text-muted">{{ item.category }}</h6>
+          <h5 class="card-text">Price :{{ item.price}}</h5>
+          <p class="card-text">Quantity: {{item.quantity}}</p>
+          <div style="display:flex;padding-inline: 5px;">
+            <button (click)="deleteFromCart(item)"  class="btn btn-danger m-2">Delete</button>
+             <button (click)="cartService.incrementQuantity(item.id)" class=" m-1">+</button>
+             <button (click)="cartService.decrementQuantity(item.id)" class=" m-1">-</button>
+             </div>
+        </div>
+       
+             <div class="d-flex justify-content-center p-3"><button class="btn btn-secondary">Buy Now</button></div>
+            </div>
+            
+                       
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+}
+<hr>
+
+<div class="container">
+    <h1>Total: {{ cartService.getTotal() }}</h1>
+    
+</div>
+

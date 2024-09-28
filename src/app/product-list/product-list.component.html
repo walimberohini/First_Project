@@ -1,0 +1,80 @@
+
+
+<div class="container">
+<img src="assets/images/slider.jpg" class="img-fluid" alt="...">
+</div>
+
+
+<div class="container py-5">
+  <h2 class="heading"> Explore Category</h2>
+  <div class="rounded-circle d-flex align-items-center justify-content-center">
+    @for( item  of categorylist ; track $index){
+    
+      <button type="button" class="btn btn-success mb-2" (click)="filterCategor(item)"> {{item}}
+
+      </button>
+    }
+  </div>
+
+</div>
+<div class="container-fluid">
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-4 g-4">
+@for( product of filteredProducts; track product.id)
+{
+    <div class="product ">
+        <div class="col-4 ">
+<div class="card shadow-sm p-1 mb-5 bg-body rounded " style="width: 18rem;">
+    <img [src]="product.imageUrl" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{ product.name }}</h5>
+      <h6 class="card-title text-muted">{{ product.category }}</h6>
+      <p class="card-text">Rs.{{ product.price }}</p>
+     
+
+    
+     @if(product.availableQty == 0){
+      <button  class="btn btn-secondary">out of stock</button>
+     }@else{
+      <button (click)="addToCart(product)" class="btn btn-primary">Add To Cart</button>
+    }
+    </div>
+  </div>
+  </div>
+  </div>
+}
+</div>
+</div>
+</div>
+
+<div class="container py-5">
+  <div class="row gy-5">
+    <div class="col-4">
+      <div class="p-3 shadow p-3 mb-5 bg-body rounded "><img src="assets/images/offer1.png" class="img-fluid" alt="..."></div>
+    </div> 
+    <div class="col-4">
+      <div class="p-3 shadow p-3 mb-5 bg-body rounded "><img src="assets/images/offer2.png" class="img-fluid" alt="..."></div>
+    </div>
+    <div class="col-4">
+      <div class="p-3 shadow p-3 mb-5 bg-body rounded"><img src="assets/images/offer2.png" class="img-fluid" alt="..."></div>
+    </div>
+    
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="container">
+  <div class="row d-flex justify-content-center shadow p-1 mb-3 bg-body rounded ">
+  <img src="assets/images/pizzabanner.jpg" class="img-fluid" alt="..."></div></div>
+</div>
+
+<app-mobileapp></app-mobileapp>
+
+
+
+
+<app-footer></app-footer>
+
+
+

@@ -1,0 +1,67 @@
+.img1{
+    width:35px;
+    padding: 2px;
+}
+
+.vl {
+    border-left: 2px solid #e3b5a25c;;
+    height: 45px;
+  
+
+}
+.title{
+    color: #6b4737;
+    font-weight: 500;
+
+}
+
+
+
+
+.btn-primary {
+   color: #fff;
+   background-color: #ba5906;
+   border-color: #6b4737;
+   width: 199px;
+    
+}
+
+
+.card-title {
+    color: #6b4737;
+}
+
+
+.modal-header .btn-close {
+    padding: 5px;
+    margin-top: -162px;
+}
+
+
+.modal-content {
+    
+    width: 81%;
+    
+}
+
+.heading{
+    color:#6b4737;
+}
+
+
+
+input{
+    width: 302px;
+    padding-block: 3px;
+    border: 2px solid #c6714c6e;
+    border-radius: 5px;
+}
+
+
+.input-group-text {
+     
+    background-color: #fff;
+    border: 2px solid #c6714c6e;
+    padding-block: 3px;
+    
+}
